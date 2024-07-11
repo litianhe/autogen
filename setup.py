@@ -30,6 +30,8 @@ install_requires = [
     "pydantic>=1.10,<3,!=2.6.0",  # could be both V1 and V2
     "docker",
     "packaging",
+    "ollama",
+    "fix_busted_json",
 ]
 
 jupyter_executor = [
@@ -90,6 +92,7 @@ extra_require = {
     "mistral": ["mistralai>=0.2.0"],
     "groq": ["groq>=0.9.0"],
     "cohere": ["cohere>=5.5.8"],
+    "ollama": ["ollama>=0.2.1", "fix_busted_json"],
 }
 
 setuptools.setup(
